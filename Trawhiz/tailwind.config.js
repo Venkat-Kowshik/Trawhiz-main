@@ -7,7 +7,17 @@ export default {
         bkg: "#171819",
         muted: "#C9CBCF",
         blue:"	#03002e	",
+        white: "#FFFFFF",
+        lblue: "#0080ff",
 
+
+
+      },
+
+      dropShadow:{
+        "text-sm": "1px 1px 0px rgba(0,0,0,0.90)",
+        "text-md": "1px 2px 0px rgba(0,0,0,0.90)",
+        "text-lg": "1px 4px 0px rgba(0,0,0,0.90)", 
       },
       container: {
         center:true,
@@ -22,7 +32,7 @@ export default {
       fontFamily:{
         sans:["Outfit","sans-serif"],
       },
-      fontSize:{
+      fontSize: {
         sm:["clamp(1.00rem,calc(0.92rem+0.39vw),1.20rem)","1.4"],
         base:["clamp(1.13rem,calc(0.98rem+0.73vw),1.50rem)","1.5"],
         lg:["clamp(1.27rem,calc(1.03rem+1.19vw),1.88rem)","1.4"],

@@ -9,6 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,700&family=Montserrat:wght@300&family=Outfit:wght@600&family=Poppins:ital,wght@1,300;1,500;1,900&display=swap" rel="stylesheet">
+    <style>
+    .text-4xl {
+    font-size: clamp(2.03rem, calc(1.03rem + 4.98vw), 4.58rem);
+    }
+    .highlight-on-hover {
+        background-color: green; /* Change this to the desired highlight color */
+        color: white; /* Change this to the desired text color */
+    }
+
+    .highlight-on-hover:hover {
+        background-color: darkblue; /* Change this to the desired highlight color on hover */
+        color: white; /* Change this to the desired text color on hover */
+    }
+
+  </style>
   </head>
   <body class="bg-blue text-white selection:bg-blue selection:text-bkg overflow-hidden">
     <div id="parallax">
@@ -19,12 +34,15 @@
       </nav>
 
       <header class="min-h-screen flex flex-col justify-evenly items-center relative">
-        <img sizes="(min-width:500px)480w,650w,800w,1300w(max-width:auto)" 
-             srcset="./src/assets/bg.jpg 480w, ./src/assets/bg.jpg 650w,
-                     ./src/assets/bg-md.jpg 800w,./src/assets/bg-lg.jpg,1300w" 
-             class="absolute h-full w-full -z-20 object-cover object-center" src="./src/assets/bg.jpg" alt="hero" aria-hidden="true">
-        <h1></h1>
-        <a href=""></a>
+       <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-blue to-transparent"></div>
+        <img class="absolute h-full w-full -z-20 object-cover object-center" src="./src/assets/bg.jpg" alt="hero" aria-hidden="true">
+        <h1 class="text-center text-lblue  fontbold text-muted text-4xl tracking-wide py-12  dropShadow-text-lg">Wanna Go for a Trip??<br>
+                      No Idea about Planning :( <br>
+                    TraWhiz: A Unique trip advisor Bot </h1>
+        <a href="#contact-form" class=" focus:outline-none bg-blue text-white font-medium rounded-full border border-white  py-3 px-8 highlight-on-hover focus-visible:ring-4 
+         ring-offset-white  ring-offset-2 ring-blue-100 flex space-x-2 dropShadow-text-lg hover:dropShadow-none transition-shadow">
+          <span class="uppercase tracking-wide">Hop to Expirience</span>
+        </a>
       </header>
 
     </div>
