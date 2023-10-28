@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="places.html">Home</a></li>
+            <li><a href="#">Travel Places</a></li>
+            <li><a href="https://github.com/Amarnath-Rao">github</a></li>
+            <li><a href="https://devpost.com/software/super-duper-chatbot?ref_content=user-portfolio&ref_feature=in_progress">DevPost</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <h1>Book Your Next Travel With Us</h1>
+        <p>Find the best deals on flights to any destination in the world.</p>
+        <form>
+          <input type="text" placeholder="Enter your destination">
+          <input type="date" placeholder="Departure date">
+          <input type="date" placeholder="Return date">
+          <button type="submit">Search Flights</button>
+        </form>
+      </section>
+      <section class="about">
+        <h2>About Us</h2>
+        <p>We can help you find the best flights at affordable prices.</p>
+      </section>
+      <footer>
+        <p>&copy; 2023 Travel Bot. All rights reserved.</p>
+      </footer>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+  
+    <df-messenger
+          intent="WELCOME"
+          chat-title="Trawhiz"
+          agent-id="f919b63b-56d0-41b1-8f34-0bb56a03894f"
+          language-code="en"
+        ></df-messenger>
+    
+    <!-- CHAT BAR BLOCK 
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Ask me a question!
+            <i id="chat-icon" style="color: white" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                
+                 <!-- MESSAGES CONTAINER -->
+<!--                 <div class="outer-container">
+                    <div class="chat-container"> -->
+                        
+                        <!-- MESSAGES -->
+<!--                         <div id="chatbox">
+                            <p id="botStarterMessage" class="botText"><span>What can I help you with?</span></p>
+                        </div> -->
+                        
+                        <!-- USER INPUT BOX -->
+<!--                         <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="input-box" name="msg" placeholder="Send a message to start a chat!">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #333" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<!-- <script src="static/scripts/chat.js"></script> -->
+
+</html>
