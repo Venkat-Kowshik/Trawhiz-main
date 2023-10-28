@@ -175,19 +175,23 @@
 /* df-messenger styles */
 
 df-messenger {
-    --df-messenger-bot-messenger: #ffffffbd;
-    --df-messenger-button-titlebar-color: rgb(94, 122, 141);
-    --df-messenger-chat-background-color: #fff;
-    --df-messenger-send-icon: rgb(94, 122, 141);
-    --df-messenger-user-message: #e5e5e5;
-
+    --df-messenger-bot-messenger: #283038; /* Dark blue-gray for the messenger background */
+    --df-messenger-button-titlebar-color: #283038; /* Matching color for the titlebar */
+    --df-messenger-chat-background-color: #1E242B; /* Darker background for the chat area */
+    --df-messenger-send-icon: #283038; /* Dark blue-gray for the send icon */
+    --df-messenger-user-message: #FFFFFF; /* White text for user messages */
+    --df-messenger-bot-message: #4CAF50; /* Bot messages in a fresh green color */
+    --df-messenger-highlight: #FFD700; /* A nice gold for important highlights */
+    --df-messenger-link: #3498DB; /* Links in a cool blue color */
+    --df-messenger-accent: #FF6347; /* An eye-catching orange accent */
 }
+
 
 df-messenger chat-message {
     max-width: 70%;
     word-wrap: break-word;
     display: inline-block;
-    background-color: #F5F5F5;
+    background-color: #ed0808;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
