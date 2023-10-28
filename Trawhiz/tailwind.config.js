@@ -9,6 +9,7 @@ export default {
         blue:"	#03002e	",
         white: "#FFFFFF",
         lblue: "#0080ff",
+        bluer:"#4169E1"
 
 
 

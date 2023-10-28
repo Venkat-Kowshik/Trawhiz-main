@@ -25,7 +25,7 @@
 
   </style>
   </head>
-  <body class="bg-blue text-white selection:bg-blue selection:text-bkg overflow-hidden">
+  <body class="bg-blue text-white selection:bg-blue selection:text-bkg ">
     <div id="parallax">
       <nav class="grid place-items-center absolute w-full top-0 z-50" aria-label="Primary Navigation">
         <a href="/" aria-label="Go Home" class="p-1 m-4 focus:outline-none focus-visible:ring-4">
@@ -34,16 +34,32 @@
       </nav>
 
       <header class="min-h-screen flex flex-col justify-evenly items-center relative">
-       <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-blue to-transparent"></div>
-        <img class="absolute h-full w-full -z-20 object-cover object-center" src="./src/assets/bg.jpg" alt="hero" aria-hidden="true">
-        <h1 class="text-center text-lblue  fontbold text-muted text-4xl tracking-wide py-12  dropShadow-text-lg">Wanna Go for a Trip??<br>
-                      No Idea about Planning :( <br>
-                    TraWhiz: A Unique trip advisor Bot </h1>
-        <a href="#contact-form" class=" focus:outline-none bg-blue text-white font-medium rounded-full border border-white  py-3 px-8 highlight-on-hover focus-visible:ring-4 
-         ring-offset-white  ring-offset-2 ring-blue-100 flex space-x-2 dropShadow-text-lg hover:dropShadow-none transition-shadow">
-          <span class="uppercase tracking-wide">Hop to Expirience</span>
+        <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-blue to-transparent"></div>
+
+        <img class="absolute h-full w-full z-[-20] object-cover object-center" src="./src/assets/bg.jpg" alt="hero" aria-hidden="true">
+        <h1 class="text-center text-bluer font-bold text-muted text-4xl tracking-wide py-12 drop-shadow-lg">Wanna Go for a Trip??<br>
+          No Idea about Planning :( <br>
+          TraWhiz: A Unique trip advisor Bot </h1>
+        <a href="#contact-form" class="focus:outline-none bg-blue text-white font-medium rounded-full border border-white py-3 px-8 hover:bg-lblue focus-visible:ring-4 ring-offset-white ring-offset-2 ring-blue-100 flex space-x-2 hover:drop-shadow-none transition-shadow">
+          <span class="uppercase tracking-wide">Hop to Experience</span>
         </a>
       </header>
+      <main class="bg-blue relative mt-16 sm:mt-24 lg:mt-40 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
+        <section aria-labelledby="headline" class="container grid gap-4 text-center max-w-prose">
+          <div>
+            <small class="text-white tracking-widest text-white uppercase drop-shadow-text-sm">Heloo</small>
+            <h2 id="headline" class="text-3xl text-white font-bold tracking-wide drop-shadow-text-md">This is anothe ron</h2>
+          </div>
+          <p class="text-muted text-bluer drop-shadow-text-sm">
+            Sed consequat, tortor ac viverra consectetur, nulla augue tempus ex, 
+            nec rhoncus arcu libero eget eros. 
+            Integer congue ligula sit amet scelerisque cursus. 
+            Vivamus auctor ac metus eget feugiat. Sed facilisis, libero non tempor luctus, velit arcu volutpat sem, nec eleifend ligula tortor eu justo. Phasellus nec dapibus purus. Quisque viverra nec justo vel congue. Nullam fermentum nunc at tellus tristique, eu suscipit orci rhoncus. Sed non massa a turpis dignissim feugiat.
+             Integer et finibus sapien, ut volutpat orci.
+          </p>
+        </section>
+      </main>
+      
 
     </div>
     <script type="module" src="/src/main.jsx"></script>
