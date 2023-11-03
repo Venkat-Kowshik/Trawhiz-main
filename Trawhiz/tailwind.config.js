@@ -3,6 +3,9 @@ export default {
   content: ["./index.html","./main.js"],
   theme: {
     extend: {
+      screens:{
+        xs:"425px",
+      },
       colors:{
         bkg: "#171819",
         muted: "#C9CBCF",
