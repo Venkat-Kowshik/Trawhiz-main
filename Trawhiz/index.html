@@ -25,7 +25,7 @@
 
   </style>
   </head>
-  <body class="bg-blue text-white selection:bg-blue selection:text-bkg ">
+  <body class="bg-blue text-base text-white selection:bg-blue selection:text-bkg ">
     <div id="parallax">
       <nav class="grid place-items-center absolute w-full top-0 z-50" aria-label="Primary Navigation">
         <a href="/" aria-label="Go Home" class="p-1 m-4 focus:outline-none focus-visible:ring-4">
@@ -37,7 +37,7 @@
         <div class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-blue to-transparent"></div>
 
         <img class="absolute h-full w-full z-[-20] object-cover object-center" src="./src/assets/bg.jpg" alt="hero" aria-hidden="true">
-        <h1 class="text-center text-bluer font-bold text-muted text-4xl tracking-wide py-12 drop-shadow-lg">Wanna Go for a Trip??<br>
+        <h1 class="text-center text-blue text-bluer font-bold text-muted text-4xl tracking-wide py-12 drop-shadow-lg">Wanna Go for a Trip??<br>
           No Idea about Planning :( <br>
           TraWhiz: A Unique trip advisor Bot </h1>
         <a href="#contact-form" class="focus:outline-none bg-blue text-white font-medium rounded-full border border-white py-3 px-8 hover:bg-lblue focus-visible:ring-4 ring-offset-white ring-offset-2 ring-blue-100 flex space-x-2 hover:drop-shadow-none transition-shadow">
@@ -45,7 +45,7 @@
         </a>
       </header>
       <main class="bg-blue relative mt-16 sm:mt-24 lg:mt-40 pb-16 -mb-16 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden">
-        <section aria-labelledby="headline" class="container grid gap-4 text-center max-w-prose">
+        <section aria-labelledby="headline" sm:text-left relative class="container grid gap-4 text-center max-w-prose">
           <div>
             <small class="text-white tracking-widest text-white uppercase drop-shadow-text-sm">Heloo</small>
             <h2 id="headline" class="text-3xl text-white font-bold tracking-wide drop-shadow-text-md">This is anothe ron</h2>
@@ -58,6 +58,50 @@
              Integer et finibus sapien, ut volutpat orci.
           </p>
         </section>
+        <section aria-labelledby="slider" class="container grid gap-4 text-center sm:text-left relative">
+         <div class="relative">
+          <div class="hidden sm:block absolute w-8 bg-bluer/20 -left-4 h-full"></div>
+          <div>
+            <small class="tracking-widest text-white uppercase drop-shadow-text-sm">What are we made of?</small>
+            <h2 id="slider" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Trips for Explorers </h2>
+          </div>
+          <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
+            <p class="text-muted max-w-2xl drop-shadow-text-sm">
+              Integer congue ligula sit amet scelerisque cursus. 
+              Vivamus auctor ac metus eget feugiat. Sed facilisis, libero non tempor luctus, velit arcu volutpat sem, nec eleifend ligula tortor eu justo. Phasellus nec dapibus purus. Quisque viverra nec justo vel congue. Nullam fermentum nunc at tellus tristique, eu suscipit orci rhoncus. Sed non massa a turpis dignissim feugiat.
+               Integer et finibus sapien, ut volutpatthis is a paragraph area left for para using slider
+            </p>
+            <div class="flex space-x-4">
+              <button data-slideBtn id="prev" class="grid place-items-center bg-accent hover:bg-bluer/90 rounded-full p-2 text-white focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-white  disabled" aria-label="show previousimage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" class="pointer-events-none"   height="32" fill="white" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm48-88a8,8,0,0,1-8,8H107.31l18.35,18.34a8,8,0,0,1-11.32,11.32l-32-32a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,11.32L107.31,120H168A8,8,0,0,1,176,128Z"></path></svg>
+              </button>
+              <button data-slideBtn id="next" class="grid place-items-center bg-accent hover:bg-bluer/90 rounded-full p-2 text-white focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-bluer disabled:bg-lblue/20 disabled:text-bluer" aria-label="show nextimage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" class="pointer-events-none" height="32" fill="white" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path></svg>              </button>
+            </div>
+          </div>  
+        </div>
+        </section>
+        <div class="-mt-10 sm:-mt-20 lg:-mt-36 container xs:w-screen">
+           <div data-slideContainer>
+            <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
+              <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer" src="./src/assets/Storm.jpg" alt="img1">
+              <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
+                Ocean Wonders</p>
+              
+            <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
+                <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer" src="./src/assets/Storm.jpg" alt="img1">
+                <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
+                    Ocean Wonders</p>
+            
+            <div class="relative w-full xs:w-auto flex-grow flex-shrink-0 xs:basis-96 pr-4" data-slide>
+              <img class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer" src="./src/assets/Storm.jpg" alt="img1">
+              <p class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity">
+                Ocean Wonders</p>
+           
+                  </div>
+
+           </div>
+        </div>
       </main>
       
 
